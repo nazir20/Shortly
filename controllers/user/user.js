@@ -1,7 +1,7 @@
 const UserModel = require('../../models/User');
 const bcrypt = require('bcryptjs');
 const {nanoid} = require('nanoid');
-const BASE = 'http://localhost:8000/';
+const BASE = 'https://shortly-wpnu.onrender.com/';
 const Url = require('../../models/Url');
 
 
