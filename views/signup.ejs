@@ -1,0 +1,90 @@
+<%- include('layouts/header') %> 
+    <div class="login-signup">
+      <div class="container signup-container">
+        <div class="row">
+            <div class="col-md-6 m-auto">
+                <div class="card shadow-lg login-signup-card">
+                    <!--Signup Form -->
+                    <form action="/signup" method="post">
+                        <%- include('partials/messages'); %> 
+                        <div class="col-auto mb-3">
+                            <label class="visually-hidden" for="autoSizingInputGroup1">Full Name</label>
+                            <div class="input-group">
+                              <div class="input-group-text">
+                                <i class="fas fa-user"></i>
+                              </div>
+                              <input name="fullName" type="text" class="form-control" id="autoSizingInputGroup1" placeholder="Full Name" value="<%= typeof fullName != 'undefined' ? fullName : '' %>">
+                            </div>
+                        </div>
+                        <div class="col-auto mb-3">
+                            <label class="visually-hidden" for="autoSizingInputGroup2">Email Address</label>
+                            <div class="input-group">
+                              <div class="input-group-text">
+                                <i class="fas fa-at"></i>
+                              </div>
+                              <input name="email" type="email" class="form-control" id="autoSizingInputGroup2" placeholder="Email Address" value="<%= typeof email != 'undefined' ? email : '' %>">
+                            </div>
+                        </div>
+                        <div class="col-auto mb-3">
+                            <label class="visually-hidden" for="password">Password</label>
+                            <div class="input-group">
+                              <div class="input-group-text">
+                                <i class="fas fa-lock" id="show-password" style="color: red;"></i>
+                              </div>
+                              <input name="password" type="password" class="form-control" id="password" placeholder="Password" value="<%= typeof password != 'undefined' ? password : '' %>">
+                            </div>
+                        </div>
+                        <div class="col-auto mb-3">
+                            <label class="visually-hidden" for="confirm_p">Confirm Password</label>
+                            <div class="input-group">
+                              <div class="input-group-text">
+                                <i class="fas fa-lock" id="confirm_i"></i>
+                              </div>
+                              <input name="confirm_password" type="password" class="form-control" id="confirm_p" placeholder="Confirm Password" value="<%= typeof confirm_password != 'undefined' ? confirm_password : '' %>">
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-danger" type="submit">Signup</button>
+    
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+      const showPassword = document.getElementById('show-password');
+      const passwordField = document.getElementById('password');
+
+      const confirm_i = document.getElementById('confirm_i');
+      const confirm_p = document.getElementById('confirm_p');
+
+
+      showPassword.addEventListener('click', ()=>{
+        if (passwordField.type === "password") {
+          passwordField.type = "text";
+          showPassword.classList.remove('fa-lock');
+          showPassword.classList.add('fa-lock-open');
+        } else {
+          passwordField.type = "password";
+          showPassword.classList.remove('fa-lock-open');
+          showPassword.classList.add('fa-lock');
+        }
+      });
+
+      confirm_i.addEventListener('click', ()=>{
+        if (confirm_p.type === "password") {
+          confirm_p.type = "text";
+          confirm_i.classList.remove('fa-lock');
+          confirm_i.classList.add('fa-lock-open');
+        } else {
+          confirm_p.type = "password";
+          confirm_i.classList.remove('fa-lock-open');
+          confirm_i.classList.add('fa-lock');
+        }
+      })
+    </script>
+<%- include('layouts/footer') %> 

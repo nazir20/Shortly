@@ -1,0 +1,157 @@
+html {
+  scroll-behavior: smooth;
+}
+.profile-picture img{
+    width: 30%;
+    border-radius: 100%;
+    box-shadow: 5px 5px 20px -2px rgba(0, 0, 0, 0.573);
+}
+div.online-indicator {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    
+    background-color: #fff;
+    border-radius: 50%;
+    
+    position: relative;
+  }
+  span.blink {
+    display: block;
+    width: 15px;
+    height: 15px;
+    
+    background-color: #fff;
+    opacity: 0.7;
+    border-radius: 50%;
+    
+    animation: blink 1s linear infinite;
+  }
+  /*Animations*/
+  
+  @keyframes blink {
+    100% { transform: scale(2, 2); 
+            opacity: 0;
+          }
+  }
+  /*  */
+  .page-heading{
+    margin: 6% 0;
+  }
+
+  .url-input{
+    border: 2px solid #5463FF;
+    padding: 10px 20px;
+    border-radius: 50px;
+    outline: none;
+    width: 80%;
+  }
+  .url-date{
+    width: 40%;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #F1F6F5;
+    cursor: pointer;
+  }
+
+  .url-btn{
+    border: none;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    outline: none;
+    width: 40%;
+    background-color: #5463FF;
+    color: #fff;
+    transition: 0.5s;
+  }
+.url-btn:hover{
+  background-color: #2f7fff;
+}
+/* clipboard */
+.copy-text{
+  position: relative;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 3% 1%;
+  border-radius: 10px;
+  display: flex;
+}
+.copy-text input.text{
+  padding: 10px;
+  width: 85%;
+  font-size: 18px;
+  color: #555;
+  border: none;
+  outline: none;
+}
+
+.copy-text button{
+  padding: 9px 15px;
+  background-color: #5784f5;
+  color: #fff;
+  font: 18px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.copy-text button:active{
+  background: #809ce2;
+}
+.copy-text button:before{
+  content: "Copied";
+  position: absolute;
+  top: -45px;
+  right: 0px;
+  background-color: #5c81dc;
+  padding: 8px 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  display: none;
+}
+.copy-text button:after{
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: 25px;
+  width: 10px;
+  height: 10px;
+  background-color: #5c81dc;
+  transform: rotate(45deg);
+  display: none;
+}
+.copy-text.active button:before,
+.copy-text.active button:after{
+  display: block;
+}
+
+/* profile page */
+#profile-picture{
+  width: 50%;
+  border-radius: 100%;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .url-input{
+    width: 90%;
+  }
+  .url-btn{
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  .url-date{
+    width: 90%;
+  }
+  #profile-picture{
+    width: 100%;
+  }
+}
+table {
+  border-collapse: collapse;
+}

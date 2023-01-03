@@ -1,0 +1,141 @@
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    padding:0 15% 0 10%;
+    background-color: rgba(255, 255, 255, 0.379);
+    backdrop-filter: blur(5px);
+}
+.navbar .nav-link{margin: 0 10px;}
+.navbar img{width:160px;}
+@media only screen and (max-width: 600px) {
+  .navbar{padding: 0;}
+  .navbar img{width:40%;}
+}
+
+/* homepage */
+/******************** header.ejs styles  *********************/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+.header-div{
+    padding: 10% 5% 5% 5%;
+    font-family: 'Ubuntu', sans-serif;
+}
+.header-div .col-lg-6{
+    padding: 5% 2%;
+    margin: 2% 0;
+}
+.header-div img{
+    width: 100%;
+}
+.header-div .btn{
+    padding: 2.5% 10%;
+    background-color: #E14D2A;
+    border-radius: 50px;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+}
+.header-div .btn:hover{
+    background-color: #fff;
+    color: #E14D2A;
+    border: 1px solid #E14D2A;
+}
+/*  */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+  
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+#about{
+    background-color: #F9F9F9;
+    padding: 2% 0 5%;
+}
+#about .card h4{
+    font-family: 'Ubuntu', sans-serif;
+    color: #404258;
+    margin: 10% 0;
+}
+#about .card{
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 12px;
+    text-align: center;
+    padding:8% 4%;
+    margin: 1% 0 2%;
+}
+.about-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCF8E8;
+    padding: 6%;
+    border-radius: 100%;
+}
+.about-icon i{
+    font-size: 30px;
+    color: #E14D2A;
+}
+
+/* analytics */
+#analytics{
+    padding: 5% 0;
+}
+#analytics .btn{
+    padding: 1% 2%;
+    background-color: #E14D2A;
+    border-radius: 50px;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+}
+#analytics .btn:hover{
+    background-color: #fff;
+    color: #E14D2A;
+    border: 1px solid #E14D2A;
+}
+
+/* faq */
+#faq{
+    background-color: #F9F9F9;
+    padding: 2% 0 5%;
+}
+
+/* login page */
+.login-signup{
+    padding: 4%;
+    background: rgb(253,29,29);
+    background: linear-gradient(90deg, rgba(253,29,29,0.5049370089832808) 46%, rgba(252,188,69,0.9755252442773985) 100%);
+}
+
+.login-signup-card{
+    background-color: rgba(255, 255, 255, 0.379);
+    backdrop-filter: blur(5px);
+}
+/* sign-up page */
+.signup-container{
+    margin-top: 10%;
+  }
+.signup-container{
+    padding: 5% 0;
+}
+.signup-container .card{
+    border: none;
+    padding:10%;
+}
+
+  
+@media only screen and (max-width: 600px) {
+    .header-div{
+        margin-top:8%;
+        font-family: 'Ubuntu', sans-serif;
+    } 
+    .signup-container{
+        margin-top: 40%;
+        margin-bottom: 20%;
+    }
+}

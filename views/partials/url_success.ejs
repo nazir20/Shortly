@@ -1,0 +1,42 @@
+<% if(url_success !=''){ %> 
+    <style>
+        #loading_gif{
+            width: 50%;
+        }
+    </style>
+    <div class="container">
+        <center>
+            <img src="../assets/loading.gif" alt="loading_gif" id="loading_gif">
+        </center>
+        <div class="result mt-5" style="display: none;">
+            <p><i class="fas fa-check-circle" style="color: #82CD47; margin-top: 12px;"></i> Your link has been successfully shortened!</p>
+            <div class="copy-text">
+                <input type="text" class="text" value="<%= url_success %> " style="color: #F96666;">
+                <button>
+                    <i class="far fa-clone"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let copyText = document.querySelector('.copy-text');
+        copyText.querySelector('button').addEventListener('click', ()=>{
+            let input = copyText.querySelector('input.text');
+            input.select();
+            document.execCommand('Copy');
+            copyText.classList.add('active');
+            window.getSelection().removeAllRanges();
+            setTimeout(()=>{
+                copyText.classList.remove('active');
+            }, 2500);
+        })
+    </script>
+    <script>
+        const loading_gif = document.getElementById('loading_gif');
+        const result = document.querySelector('.result');
+        setTimeout(()=>{
+            loading_gif.style.display = 'none';
+            result.style.display = 'block';
+        }, 3000);
+    </script>
+<% } %> 

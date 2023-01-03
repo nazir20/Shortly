@@ -1,0 +1,165 @@
+<%- include('layouts/header') %> 
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+    .header-div{
+        padding: 10% 5% 5% 5%;
+        font-family: 'Ubuntu', sans-serif;
+    }
+</style>
+<div class="container">
+    <div class="row header-div">
+        <div class="col-lg-6">
+            <h6>URL SHORTENER</h6>
+            <h1 class="mt-2 mb-3">Here you have full control over your links</h1>
+            <p>URL Shortener, Link Management, Link Analytics, QR Codes Generator and Link in bio Platform. Shorten, brand, manage, track and share your links the easy way.</p>
+            <a href="/signup" class="btn">SIGNUP</a>
+        </div>
+        <div class="col-lg-6">
+            <img src="assets/homepage_header.png" alt="header_img">
+        </div>
+    </div>
+</div>
+<section id="about">
+    <div class="container reveal">
+        <div class="text-center p-5">
+            <h2>What is Shortly <i style="color:#FF731D;" class="fas fa-question"></i></h2>
+            <p style="font-weight: 400;padding:1%;">Shortly is a tool that takes a long URL and shortens it into a shorter, more manageable URL. This shortened URL can then be shared, tweeted, or emailed, and when clicked, it will redirect the user to the original, longer URL. Link shorteners are often used to condense long, unwieldy URLs so that they can be shared more easily, or to track clicks on a particular link.</p>
+        </div>
+        <div class="row p-2">
+            <div class="col-lg-3">
+                <div class="card">
+                    <div class="about-icon m-auto">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h4>Url Shortener</h4>
+                    <p>Shortly is a URL Shortener and Link Management Platform with a lot of features that will help you handle all your links in an intuitive way and reveal the potential of your links.</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card">
+                    <div class="about-icon m-auto">
+                        <i class="fas fa-qrcode"></i>
+                    </div>
+                    <h4>QR Codes</h4>
+                    <p>Generate QR codes and customize them according to your style and manage their redirection so that QR codes reflect your brand and allow you to grow your business.</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card">
+                    <div class="about-icon m-auto">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h4>Link analytics</h4>
+                    <p>Shortly is an advanced Link Analytics platform that tracks clicks on short links and measures the effectiveness of clicks. Extensive statistics of clicks on short links.</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card">
+                    <div class="about-icon m-auto">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h4>Link in bio</h4>
+                    <p>Shortly is a tool for creating your own link in bio microsites that will allow you to reach your audience, measure click rates and expand the audience with dedicated QR codes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="analytics">
+    <div class="container reveal">
+        <div class="row">
+            <div class="col-lg-6 p-3">
+                <div class="analytics-img">
+                    <img style="width: 90%;" src="assets/analytics.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 p-5">
+                <span class="badge text-bg-danger p-1">Analytics</span>
+                <h4 class="mb-5"><b>Measure</b> the performance <b>and</b> click-through rate <b>of your links<span style="color: #FF731D;font-size: 30px;">.</span></b></h4>
+                <p>Anyone who cares about link optimization knows that without good <strong><i>link analytics</i></strong>, it's hard to improve anything. Shortly offers extensive statistics and analysis of link clicks to help you grow.</p>
+                <p>See it in action <i class="fas fa-arrow-down"></i></p>
+                <a href="#" class="btn btn-danger"><i class="fas fa-link" style="padding-right: 15px;"></i> See Link Analytics Page</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="faq">
+    <div class="container reveal">
+        <div class="text-center mb-5">
+            <h1>FAQ <i class="fas fa-question-circle" style="color: #FF731D;"></i></h1>
+            <h4>Frequently Asked Questions</h4>
+        </div>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                What is a URL shortener?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>URL shortener or link shortener is a tool that shortens a long URL into a short link that redirects to the target URL. <br> <br>
+
+                 Shortly is URL shortener where you can create and manage short links and track their click statistics. <br> <br>
+                    
+                    Shortly is URL Shortener for creating branded short links. Short links created in Shortly can be short links on the short.ly domain or short links on your own custom domain.
+                    <br> <br>
+                    Shortly URL Shortener also allows you to use your own name, aliases otherwise known as back-half of a short link, so that each short link can be perfectly readable to the audience and generate more clicks than in the case of a standard URL.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Does the short link expire? How long a short link created in Shortly last?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    The short link in Shortly expires if user already specified the link to be expired. There is no limit to the lifespan of a short url. If you want, you can delete the short link yourself.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Can you generate and customize a QR Code for a short link in Shortly?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Yes - Shortly allows you to generate QR codes for all short links, but also for link in bio and customize them according to your needs by changing colors, shapes and adding your own logo.
+
+                    Does the black and white QR code become boring for you? In Shortly, you will customize the QR code to reflect your brand.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</section>
+
+
+<!-- scripts -->
+<script>
+    function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+        } else {
+        reveals[i].classList.remove("active");
+        }
+    }
+    }
+
+    window.addEventListener("scroll", reveal);
+</script>
+<%- include('layouts/footer') %> 

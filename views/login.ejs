@@ -1,0 +1,42 @@
+<%- include('layouts/header') %> 
+    <div class="login-signup">
+        <div class="container signup-container">
+            <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4">
+                    <%- include('partials/messages'); %> 
+                    <div class="card shadow-lg login-signup-card">
+                        <!--Signup Form -->
+                        <form action="/login" method="post">
+                            <div class="col-auto mb-3">
+                                <label class="visually-hidden" for="autoSizingInputGroup2">Email Address</label>
+                                <div class="input-group">
+                                  <div class="input-group-text">
+                                    <i class="fas fa-at"></i>
+                                  </div>
+                                  <input name="email" type="email" class="form-control" id="autoSizingInputGroup2" placeholder="Email Address">
+                                </div>
+                            </div>
+                            <div class="col-auto mb-3">
+                                <label class="visually-hidden" for="autoSizingInputGroup3">Password</label>
+                                <div class="input-group">
+                                  <div class="input-group-text">
+                                    <i class="fas fa-lock"></i>
+                                  </div>
+                                  <input name="password" type="password" class="form-control" id="autoSizingInputGroup3" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-danger" type="submit">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                    <center>
+                        <a href="#forgot-password">Forgot Password?</a>
+                    </center>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+        </div>
+    </div>
+<%- include('layouts/footer') %> 
